@@ -1,3 +1,4 @@
+
 import cv2
 import imutils
 from skimage.filters import threshold_local
@@ -119,10 +120,3 @@ def convert_images_to_pdf(image_paths, output_path):
         with open(output_path, "wb") as pdf_file:
             pdf_file.write(img2pdf.convert(temp_files))
             
-            
-    
-
-    
-    
-
-
