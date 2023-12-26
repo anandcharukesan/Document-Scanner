@@ -15,13 +15,6 @@ def delete_files_in_directory(directory):
             os.remove(file_path)
             print(f"Deleted file: {file_path}")
 
-
-
-    
-
-
-
-
 def scanner(img, output_directory):
     # Create the output directory if it doesn't exist
     if not os.path.exists(output_directory):
@@ -93,7 +86,7 @@ def scanner(img, output_directory):
     
     
     image_folder = output_directory
-    output_pdf_path = "Output path/output.pdf" 
+    output_pdf_path = "Output_path/output.pdf" 
     
     image_paths = [os.path.join(image_folder, file) for file in os.listdir(image_folder) if file.lower().endswith(('.jpg', '.jpeg', '.png'))]
     
